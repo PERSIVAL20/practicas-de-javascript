@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let numeroDecuenta;
+     let nombre;
+    let saldo = 0;
+    let saldoacredor = 0;
+    do {
+        numeroDecuenta = parseInt(prompt('ingrese numero de cuenta:'));
+        if (numeroDecuenta >= 0) {
+            nombre = prompt('nombre del cliente:');
+             saldo = parseFloat(prompt('Saldo actual:'));
+        if (saldo > 0) {
+            saldoacredor = saldoacredor + saldo;
+             document.write(nombre + ' tiene saldo acreedor<br>');
+        } else {
+        if (saldo < 0) {
+          document.write(nombre + ' tiene saldo deudor<br>');
+         } else {
+             document.write(nombre + ' tiene saldo nulo<br>');
+             }
+             }
+            }
+        } while (numeroDecuenta > 0);
+        document.write('Suma total de saldos acreedores:' + saldoacredor);
+</script>
+
+</body>
+</html>

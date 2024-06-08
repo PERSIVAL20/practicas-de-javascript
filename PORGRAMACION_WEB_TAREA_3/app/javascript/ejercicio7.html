@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+    let numero1, numero2;
+    numero1=parseInt(prompt('ingrese el primer numero:'));
+    numero2=parseInt(prompt('ingrese el segundo numero:'));
+    if (numero1 > numero2) {
+        let suma, diferencia;
+        suma = numero1 + numero2;
+        diferencia = numero1 - numero2;
+        document.write('la suma es:' +suma);
+        document.write('<br>');
+        document.write('la diferencia es:' +diferencia);
+    } else {
+        let producto,division;
+        producto = numero1 * numero2;
+        division = numero1 / numero2;
+        document.write('el producto es' + producto);
+        document.write('<br>');
+        document.write('la division del primero con respecto al segundo es:' +division);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre;
+        nombre = prompt('ingrese el nombre del postulante');
+        let cantidadpreguntas;
+        cantidadpreguntas = parseInt(prompt('cantidad de preguntas del test'));
+        let cantidadCorrectas;
+        cantidadCorrectas = parseInt(prompt('cantidad de preguntas correctas'));
+        let porcentaje;
+        porcentaje = cantidadCorrectas / cantidadpreguntas * 100;
+        if (porcentaje >=90) {
+            document.write('nivel superior');
+        } else {
+            if (porcentaje >= 75) {
+                document.write('nivel medio');
+            } else {
+               if (porcentaje >= 50) {
+                document.write('nivel regular');
+               } else {
+                document.write('fuera del nivel');
+               } 
+            }
+        }
+    </script>
+</body>
+</html>
